@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Julia</class>
+ <widget class="QWidget" name="Julia">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1020</width>
+    <height>931</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="cThree">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>130</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>c3: -0.8+0.156i</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cOne">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>130</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>c1: -0.745+0.113i</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="bsplinelabel">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>20</y>
+     <width>561</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#00557f;&quot;&gt;Click &lt;/span&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#00557f;&quot;&gt;buttons&lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#00557f;&quot;&gt; with &lt;/span&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#00557f;&quot;&gt;LeftMouseButton &lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#00557f;&quot;&gt;to choose &lt;/span&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#00557f;&quot;&gt;C&lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#00557f;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#00557f;&quot;&gt;Click 'Clear' to erase and paint again.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cTwo">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>130</y>
+     <width>151</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>c2: -0.314-0.628i</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cFour">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>130</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>c4: 0.281+0.01i</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cOne</sender>
+   <signal>clicked()</signal>
+   <receiver>Julia</receiver>
+   <slot>Cone_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>252</x>
+     <y>190</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>240</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cTwo</sender>
+   <signal>clicked()</signal>
+   <receiver>Julia</receiver>
+   <slot>Ctwo_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>415</x>
+     <y>184</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>417</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cThree</sender>
+   <signal>clicked()</signal>
+   <receiver>Julia</receiver>
+   <slot>Cthree_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>587</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>587</x>
+     <y>216</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cFour</sender>
+   <signal>clicked()</signal>
+   <receiver>Julia</receiver>
+   <slot>Cfour_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>758</x>
+     <y>177</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>770</x>
+     <y>216</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Cone_click()</slot>
+  <slot>Ctwo_click()</slot>
+  <slot>Cthree_click()</slot>
+  <slot>Cfour_click()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Bezier</class>
+ <widget class="QWidget" name="Bezier">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>628</width>
+    <height>749</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTextBrowser" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>140</y>
+     <width>501</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Clear">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>680</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="bezierlabel">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>561</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#00557f;&quot;&gt;Choose points with &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#00557f;&quot;&gt;LeftMouseButton&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#00557f;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#00557f;&quot;&gt;MidMouseButton&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#00557f;&quot;&gt; is alternative&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#00557f;&quot;&gt; to close the polygon.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#00557f;&quot;&gt;Click&lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#00557f;&quot;&gt; RightMouseButton&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#00557f;&quot;&gt; to get Bezier curve.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#00557f;&quot;&gt;Click 'Clear' to erase and paint again.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Clear</sender>
+   <signal>clicked()</signal>
+   <receiver>Bezier</receiver>
+   <slot>Clear_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>371</x>
+     <y>679</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>422</x>
+     <y>699</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Clear_click()</slot>
+ </slots>
+</ui>

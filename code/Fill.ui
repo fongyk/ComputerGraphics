@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Fill</class>
+ <widget class="QWidget" name="Fill">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>644</width>
+    <height>882</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="filllabel">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>561</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#00557f;&quot;&gt;Draw &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#00557f;&quot;&gt;line/curve&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#00557f;&quot;&gt; with &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#00557f;&quot;&gt;LeftMouseButton&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#00557f;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#00557f;&quot;&gt;Choose an area with &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#00557f;&quot;&gt;RightMouseButton&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#00557f;&quot;&gt; to fill.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#00557f;&quot;&gt;You'll get a closed polygon by clicking&lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#00557f;&quot;&gt; MidMouseButton&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#00557f;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#00557f;&quot;&gt;Click 'Clear' to erase and paint again.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Clear">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>810</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pointNum">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>140</y>
+     <width>231</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Clear</sender>
+   <signal>clicked()</signal>
+   <receiver>Fill</receiver>
+   <slot>Clear_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>372</x>
+     <y>802</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>552</x>
+     <y>817</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Clear_click()</slot>
+  <slot>Loop_click()</slot>
+ </slots>
+</ui>

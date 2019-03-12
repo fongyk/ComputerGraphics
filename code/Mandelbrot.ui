@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Mandelbrot</class>
+ <widget class="QWidget" name="Mandelbrot">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1038</width>
+    <height>955</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="orderTwo">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>120</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>f(z)=z^2+c</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="bsplinelabel">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>10</y>
+     <width>581</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#00557f;&quot;&gt;Click &lt;/span&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#00557f;&quot;&gt;buttons&lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#00557f;&quot;&gt; with &lt;/span&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#00557f;&quot;&gt;LeftMouseButton &lt;/span&gt;&lt;span style=&quot; font-size:16pt; color:#00557f;&quot;&gt;to choose f(z).&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#00557f;&quot;&gt;Click 'Clear' to erase and paint again.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="orderFour">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>120</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>f(z)=z^4+c</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="orderThree">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>120</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>f(z)=z^3+c</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>orderTwo</sender>
+   <signal>clicked()</signal>
+   <receiver>Mandelbrot</receiver>
+   <slot>OrderTwo_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>208</x>
+     <y>164</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>orderThree</sender>
+   <signal>clicked()</signal>
+   <receiver>Mandelbrot</receiver>
+   <slot>OrderThree_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>457</x>
+     <y>173</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>452</x>
+     <y>197</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>orderFour</sender>
+   <signal>clicked()</signal>
+   <receiver>Mandelbrot</receiver>
+   <slot>OrderFour_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>629</x>
+     <y>147</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>652</x>
+     <y>210</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>OrderTwo_click()</slot>
+  <slot>OrderThree_click()</slot>
+  <slot>OrderFour_click()</slot>
+ </slots>
+</ui>

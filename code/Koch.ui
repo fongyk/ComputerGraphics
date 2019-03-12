@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Koch</class>
+ <widget class="QWidget" name="Koch">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>734</width>
+    <height>917</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="bsplinelabel">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>10</y>
+     <width>561</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#00557f;&quot;&gt;Click &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#00557f;&quot;&gt;numeric buttons&lt;/span&gt;&lt;span style=&quot; font-size:12pt; color:#00557f;&quot;&gt; with &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#00557f;&quot;&gt;LeftMouseButton &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#00557f;&quot;&gt;to choose iteration time.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#00557f;&quot;&gt;Click 'Clear' to erase and paint again.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Clear">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>830</y>
+     <width>111</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="levelOne">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>140</y>
+     <width>91</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="levelTwo">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>140</y>
+     <width>91</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="levelThree">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>140</y>
+     <width>91</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="levelFour">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>140</y>
+     <width>91</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="levelZero">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>140</y>
+     <width>91</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Clear</sender>
+   <signal>clicked()</signal>
+   <receiver>Koch</receiver>
+   <slot>Clear_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>328</x>
+     <y>694</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>400</x>
+     <y>694</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>levelZero</sender>
+   <signal>clicked()</signal>
+   <receiver>Koch</receiver>
+   <slot>LevelZero_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>81</x>
+     <y>178</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>53</x>
+     <y>175</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>levelOne</sender>
+   <signal>clicked()</signal>
+   <receiver>Koch</receiver>
+   <slot>LevelOne_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>191</x>
+     <y>186</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>181</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>levelTwo</sender>
+   <signal>clicked()</signal>
+   <receiver>Koch</receiver>
+   <slot>LevelTwo_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>299</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>263</x>
+     <y>218</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>levelThree</sender>
+   <signal>clicked()</signal>
+   <receiver>Koch</receiver>
+   <slot>LevelThree_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>408</x>
+     <y>196</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>385</x>
+     <y>219</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>levelFour</sender>
+   <signal>clicked()</signal>
+   <receiver>Koch</receiver>
+   <slot>LevelFour_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>493</x>
+     <y>189</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>497</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Clear_click()</slot>
+  <slot>LevelOne_click()</slot>
+  <slot>LevelTwo_click()</slot>
+  <slot>LevelThree_click()</slot>
+  <slot>LevelFour_click()</slot>
+  <slot>LevelZero_click()</slot>
+ </slots>
+</ui>
